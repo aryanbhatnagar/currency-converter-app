@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/dirhamtrEditText"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:hint="@string/enter_dirham"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <EditText
+        android:id="@+id/eurotrEditText"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:hint="@string/enter_euros"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dirham_to_rupees"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dirhamtrEditText"
+        app:layout_constraintEnd_toStartOf="@+id/dirhamtrEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dirhamtrEditText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:alpha="0.6"
+        android:onClick="DhiramToR"
+        android:text="@string/convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dirhamtrEditText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:alpha="0.6"
+        android:onClick="EUROtoR"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toTopOf="@+id/dirhamtrEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eurotrEditText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="108dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="@string/usd_to_rupees"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/usdtrEditText"
+        app:layout_constraintEnd_toStartOf="@+id/usdtrEditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/usdtrEditText"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="251dp"
+        android:layout_height="99dp"
+        android:alpha="0.8"
+        android:text="@string/my_currency_converter"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/euro_to_rupees"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/eurotrEditText"
+        app:layout_constraintEnd_toStartOf="@+id/eurotrEditText"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/eurotrEditText"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:alpha="0.6"
+        android:onClick="USDtoR"
+        android:text="@string/convert"
+        app:layout_constraintBottom_toTopOf="@+id/eurotrEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdtrEditText" />
+
+    <EditText
+        android:id="@+id/usdtrEditText"
+        android:layout_width="188dp"
+        android:layout_height="52dp"
+        android:autofillHints=""
+        android:background="#FFEB3B"
+        android:ems="10"
+        android:hint="@string/enter_us_dollars"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.726"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.293" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

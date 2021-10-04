@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CURRENCY CONVERTER</string>
+    <string name="name">Name</string>
+    <string name="convert">CONVERT</string>
+    <string name="usd_to_rupees">USD TO RUPEES</string>
+    <string name="euro_to_rupees">EURO TO RUPEES</string>
+    <string name="my_currency_converter">MY CURRENCY CONVERTER</string>
+    <string name="dhiram_to_rupees">DHIRAM TO RUPEES</string>
+    <string name="enter_us_dollars">Enter US DOLLARS</string>
+    <string name="enter_euros">Enter EUROS</string>
+    <string name="enter_dhirams">Enter DHIRAMS</string>
+    <string name="enter_dirham">Enter Dirham</string>
+    <string name="dirham_to_rupees">DIRHAM TO RUPEES</string>
+</resources>
